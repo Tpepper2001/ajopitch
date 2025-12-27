@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajo Digital | The Operating System for Informal Savings</title>
-    <!-- SEO / Meta Tags -->
-    <meta name="description" content="Ajo Digital is a non-custodial coordination layer digitizing trust-based group savings (Ajo/Esusu) for emerging markets.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,16 +12,11 @@
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .gradient-bg { background: linear-gradient(135deg, #022c22 0%, #064e3b 100%); }
         .glass-card { background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.15); }
-        .sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; z-index: 100; display: none; }
-        @media (max-width: 768px) { .sticky-cta { display: block; } }
+        input, textarea { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 0.75rem 1rem; width: 100%; outline: none; transition: all 0.2s; }
+        input:focus, textarea:focus { border-color: #059669; ring: 2px; ring-color: #059669; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 overflow-x-hidden">
-
-    <!-- Mobile Sticky CTA -->
-    <div class="sticky-cta p-4 bg-white/90 backdrop-blur-md border-t border-slate-200 shadow-2xl">
-        <a href="mailto:contact@ajodigital.ng" class="block w-full text-center bg-emerald-600 text-white py-3 rounded-xl font-bold">Speak with Founder (Pre-Seed)</a>
-    </div>
 
     <!-- Navigation -->
     <nav class="py-4 px-6 md:px-12 flex justify-between items-center bg-white border-b sticky top-0 z-50">
@@ -33,10 +26,11 @@
             </div>
             <span class="text-xl font-bold tracking-tighter text-emerald-900 leading-none">AJO DIGITAL</span>
         </div>
-        <div class="hidden md:flex items-center space-x-6">
-            <a href="#vision" class="text-sm font-medium text-slate-600 hover:text-emerald-600">Vision</a>
-            <a href="mailto:contact@ajodigital.ng" class="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-full text-sm font-bold transition duration-300 shadow-lg shadow-emerald-600/20">
-                Speak with Founder (Pre-Seed)
+        <div class="hidden md:flex items-center space-x-8">
+            <a href="#opportunity" class="text-sm font-semibold text-slate-600 hover:text-emerald-600">The Opportunity</a>
+            <a href="#solution" class="text-sm font-semibold text-slate-600 hover:text-emerald-600">Our Solution</a>
+            <a href="#contact" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2.5 rounded-full text-sm font-bold transition duration-300 shadow-lg shadow-emerald-600/20">
+                Contact Founder
             </a>
         </div>
     </nav>
@@ -50,154 +44,89 @@
                 The operating system for Ajo and Esusu groups.
             </p>
             <p class="text-emerald-300/80 text-sm md:text-base mb-10 max-w-xl mx-auto">
-                Built for market associations, cooperatives, families, and professional groups.
+                Built for market associations, cooperatives, and professional savings groups. We coordinate the logistics; existing payment rails handle the money.
             </p>
             
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="mailto:contact@ajodigital.ng" class="bg-white text-emerald-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-emerald-50 transition">Join Pilot Group</a>
-                <div class="w-full mt-6 text-emerald-400 text-xs font-bold uppercase tracking-widest flex items-center justify-center space-x-2">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04rem 0 00-7.133 12.39A11.44 11.44 0 0012 21.056c1.55 0 3.03-.31 4.385-.88m1.118-1.547L22 13m0 0l-2-2m2 2l-2 2"></path></svg>
-                    <span>We coordinate, you custody. We never hold user funds.</span>
-                </div>
+                <a href="#contact" class="bg-white text-emerald-900 px-10 py-4 rounded-full font-bold text-lg hover:bg-emerald-50 transition shadow-xl">Get Early Access</a>
+                <a href="#opportunity" class="bg-emerald-800/40 backdrop-blur text-white border border-white/20 px-10 py-4 rounded-full font-bold text-lg hover:bg-emerald-800/60 transition">Learn More</a>
             </div>
         </div>
-        <!-- Abstract background element -->
+        <!-- Decoration -->
         <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl"></div>
     </header>
 
-    <!-- Visual Schematic / How it Works -->
+    <!-- Visual Schematic -->
     <section class="max-w-5xl mx-auto -mt-16 px-6 relative z-20">
-        <div class="bg-white rounded-[2rem] p-8 md:p-12 shadow-2xl border border-slate-100">
+        <div class="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-2xl border border-slate-100">
             <div class="grid md:grid-cols-3 gap-8 items-center">
                 <div class="text-center">
                     <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-4 font-bold text-2xl">1</div>
-                    <h4 class="font-bold text-slate-900 mb-2">Members</h4>
+                    <h4 class="font-bold text-slate-900 mb-2 uppercase text-xs tracking-widest">Members</h4>
                     <p class="text-slate-500 text-sm">Commit funds via existing bank/mobile money rails.</p>
                 </div>
                 <div class="text-center border-y md:border-y-0 md:border-x border-slate-100 py-8 md:py-0 md:px-8">
                     <div class="w-16 h-16 bg-emerald-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-4 font-bold text-2xl shadow-lg shadow-emerald-600/30">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                     </div>
-                    <h4 class="font-bold text-emerald-600 mb-2">Ajo Digital Layer</h4>
-                    <p class="text-slate-500 text-sm">Automated reminders, ledger tracking, and payout orchestration.</p>
+                    <h4 class="font-bold text-emerald-600 mb-2 uppercase text-xs tracking-widest">Ajo Digital Layer</h4>
+                    <p class="text-slate-500 text-sm">Automated reminders, transparent ledgers, and payout orchestration.</p>
                 </div>
                 <div class="text-center">
                     <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-4 font-bold text-2xl">2</div>
-                    <h4 class="font-bold text-slate-900 mb-2">Payouts</h4>
+                    <h4 class="font-bold text-slate-900 mb-2 uppercase text-xs tracking-widest">Payouts</h4>
                     <p class="text-slate-500 text-sm">Funds move directly to the recipient's bank account.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Market Opportunity -->
-    <section class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-16 items-center">
+    <!-- The Opportunity Section -->
+    <section id="opportunity" class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-20 items-center">
             <div>
-                <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">The ₦20 Trillion Opportunity</h2>
-                <p class="text-slate-600 mb-8 text-lg leading-relaxed">Informal savings (Ajo/Esusu) are the backbone of emerging market finance. Despite the rise of digital banks, millions prefer group savings for the social accountability it provides.</p>
-                <div class="grid grid-cols-2 gap-6">
-                    <div class="p-6 bg-slate-100 rounded-2xl">
-                        <div class="text-3xl font-black text-emerald-600 mb-1">70%</div>
-                        <p class="text-slate-500 text-xs font-bold uppercase tracking-wider leading-tight">Nigerian Adults participate in informal groups</p>
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-6 tracking-tight">The ₦20 Trillion Opportunity</h2>
+                <p class="text-slate-600 mb-8 text-lg leading-relaxed">Informal savings are the world's oldest financial behavior. In Nigeria alone, over 70% of adults participate in some form of informal group contribution to bridge the gap between their income and their goals.</p>
+                
+                <div class="grid grid-cols-2 gap-4 mb-8">
+                    <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100 text-center">
+                        <div class="text-3xl font-black text-emerald-700 mb-1 leading-none">70%</div>
+                        <p class="text-emerald-800 text-[10px] font-bold uppercase tracking-wider">Participation Rate</p>
                     </div>
-                    <div class="p-6 bg-slate-100 rounded-2xl">
-                        <div class="text-3xl font-black text-emerald-600 mb-1">₦20T+</div>
-                        <p class="text-slate-500 text-xs font-bold uppercase tracking-wider leading-tight">Estimated annual informal group volume</p>
-                    </div>
-                </div>
-            </div>
-            <div class="space-y-4">
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex items-start space-x-4">
-                    <div class="text-red-500 p-2 bg-red-50 rounded-lg">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900">Trust Breaks at Scale</h4>
-                        <p class="text-slate-500 text-sm">A single default or record dispute collapses the entire group chain.</p>
+                    <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100 text-center">
+                        <div class="text-3xl font-black text-emerald-700 mb-1 leading-none">₦20T+</div>
+                        <p class="text-emerald-800 text-[10px] font-bold uppercase tracking-wider">Est. Annual Volume</p>
                     </div>
                 </div>
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex items-start space-x-4">
-                    <div class="text-red-500 p-2 bg-red-50 rounded-lg">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900">Manual Burden</h4>
-                        <p class="text-slate-500 text-sm">Organizers spend 5+ hours a week on reminders, collections, and disputes.</p>
-                    </div>
-                </div>
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex items-start space-x-4">
-                    <div class="text-red-500 p-2 bg-red-50 rounded-lg">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900">Visibility Deficit</h4>
-                        <p class="text-slate-500 text-sm">Members lack a formal record of their reliability, barring them from credit.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Why Now Section -->
-    <section class="py-20 bg-slate-100">
-        <div class="max-w-7xl mx-auto px-6 md:px-12">
-            <h2 class="text-3xl font-bold mb-12 text-center">Why Now?</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-3xl">
-                    <h4 class="font-bold text-emerald-600 mb-2">Digital Normalization</h4>
-                    <p class="text-slate-600 text-sm">Smartphone and digital payment penetration have finally crossed the threshold for informal markets.</p>
-                </div>
-                <div class="bg-white p-8 rounded-3xl">
-                    <h4 class="font-bold text-emerald-600 mb-2">Regulatory Push</h4>
-                    <p class="text-slate-600 text-sm">As regulators tighten grip on custodial fintechs, non-custodial sociotech solutions offer a cleaner, faster path to scale.</p>
-                </div>
-                <div class="bg-white p-8 rounded-3xl">
-                    <h4 class="font-bold text-emerald-600 mb-2">Economic Pressure</h4>
-                    <p class="text-slate-600 text-sm">Inflation is driving more people back to community-based finance to protect their purchasing power.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why We Win & Business Model -->
-    <section class="bg-slate-900 py-24 px-6 md:px-12 text-white overflow-hidden relative">
-        <div class="max-w-7xl mx-auto relative z-10">
-            <div class="grid md:grid-cols-2 gap-16 mb-24">
-                <div>
-                    <h2 class="text-4xl font-bold mb-8 tracking-tight">Strategy for Dominance</h2>
-                    <div class="space-y-6">
-                        <div class="flex space-x-4">
-                            <div class="text-emerald-400 font-mono text-xl">01</div>
-                            <div>
-                                <h4 class="font-bold text-xl mb-1">Non-Custodial Alpha</h4>
-                                <p class="text-slate-400">By not holding funds, we bypass 90% of fintech regulatory friction, allowing us to spend 100% of our focus on UX and growth.</p>
-                            </div>
-                        </div>
-                        <div class="flex space-x-4">
-                            <div class="text-emerald-400 font-mono text-xl">02</div>
-                            <div>
-                                <h4 class="font-bold text-xl mb-1">Enforcement via Visibility</h4>
-                                <p class="text-slate-400">Defaults are prevented through automated social signals, group transparency, and a permanent trust-score record.</p>
-                            </div>
-                        </div>
+                <div class="space-y-4">
+                    <div class="flex items-start space-x-3">
+                        <div class="w-6 h-6 rounded-full bg-red-100 text-red-600 flex items-center justify-center flex-shrink-0 mt-1">✕</div>
+                        <p class="text-slate-700"><span class="font-bold">Trust Breaks at Scale:</span> One default can collapse the entire chain.</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <div class="w-6 h-6 rounded-full bg-red-100 text-red-600 flex items-center justify-center flex-shrink-0 mt-1">✕</div>
+                        <p class="text-slate-700"><span class="font-bold">Manual Management:</span> Organizers waste hours on reminders and tracking.</p>
                     </div>
                 </div>
-                <div class="glass-card p-10 rounded-[2.5rem]">
-                    <h3 class="text-2xl font-bold mb-6 text-emerald-400">Business Model</h3>
-                    <p class="text-slate-300 mb-8 font-medium">We monetize usage and coordination, not float.</p>
-                    <ul class="space-y-4">
-                        <li class="flex items-center space-x-3 text-sm">
-                            <svg class="w-5 h-5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
-                            <span>Per-cycle SaaS fees on completed groups</span>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-4 bg-emerald-500/5 rounded-[3rem] blur-2xl"></div>
+                <div id="solution" class="relative bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-xl">
+                    <h3 class="text-2xl font-bold mb-6 italic text-emerald-800 tracking-tighter">Our Solution</h3>
+                    <p class="text-slate-600 mb-8">We provide a coordination layer that removes human error and maximizes group accountability.</p>
+                    <ul class="space-y-6">
+                        <li class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center flex-shrink-0">✓</div>
+                            <span class="font-medium text-slate-800">Rule-based payout orchestration</span>
                         </li>
-                        <li class="flex items-center space-x-3 text-sm">
-                            <svg class="w-5 h-5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
-                            <span>Premium tools for Large Cooperative management</span>
+                        <li class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center flex-shrink-0">✓</div>
+                            <span class="font-medium text-slate-800">Permanent digital contribution history</span>
                         </li>
-                        <li class="flex items-center space-x-3 text-sm">
-                            <svg class="w-5 h-5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
-                            <span>Identity and Trust-API for lending partners</span>
+                        <li class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center flex-shrink-0">✓</div>
+                            <span class="font-medium text-slate-800">Automated social enforcement signals</span>
                         </li>
                     </ul>
                 </div>
@@ -205,35 +134,48 @@
         </div>
     </section>
 
-    <!-- Validation / Roadmap -->
-    <section class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
-        <div class="flex flex-col md:flex-row gap-16">
-            <div class="md:w-1/3">
-                <h2 class="text-3xl font-bold mb-6">Traction</h2>
-                <div class="space-y-4">
-                    <div class="p-5 border border-emerald-100 bg-emerald-50/50 rounded-2xl">
-                        <div class="font-bold text-emerald-700">Pilot Phase</div>
-                        <p class="text-sm text-slate-600">3 Active pilot groups in Lagos among trade associations.</p>
-                    </div>
-                    <div class="p-5 border border-slate-100 bg-white rounded-2xl">
-                        <div class="font-bold text-slate-800">Coordination Volume</div>
-                        <p class="text-sm text-slate-600">Coordinating ₦2.5M+ in pilot monthly volume with zero defaults.</p>
+    <!-- Why We Win & Business Model -->
+    <section class="bg-slate-900 py-24 px-6 md:px-12 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-20">
+                <div>
+                    <h2 class="text-3xl font-bold mb-10 tracking-tight">The "Ajo Digital" Strategy</h2>
+                    <div class="grid gap-8">
+                        <div class="glass-card p-6 rounded-2xl">
+                            <h4 class="text-emerald-400 font-bold mb-2 uppercase text-xs">Low Regulatory Surface</h4>
+                            <p class="text-slate-300 text-sm">By not acting as a bank or holding user funds, we bypass the licensing hurdles that slow down traditional fintech, allowing for rapid cross-border expansion.</p>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl">
+                            <h4 class="text-emerald-400 font-bold mb-2 uppercase text-xs">Network Effects</h4>
+                            <p class="text-slate-300 text-sm">Ajo groups are inherently social. As trust scores compound, the cost of leaving the platform (or defaulting) becomes higher than the cost of staying.</p>
+                        </div>
+                        <div class="glass-card p-6 rounded-2xl">
+                            <h4 class="text-emerald-400 font-bold mb-2 uppercase text-xs">Behavior First</h4>
+                            <p class="text-slate-300 text-sm">We don't need to educate the market. We are simply giving an existing, high-frequency behavior the professional infrastructure it deserves.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="md:w-2/3">
-                <h2 class="text-3xl font-bold mb-8">Founding Team</h2>
-                <div class="bg-white p-8 rounded-3xl border border-slate-200 flex items-center space-x-6">
-                    <div class="w-20 h-20 bg-slate-200 rounded-full flex-shrink-0 overflow-hidden">
-                        <!-- Placeholder Founder Image -->
-                        <div class="w-full h-full bg-emerald-600 flex items-center justify-center text-white font-bold text-3xl">AD</div>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-xl">Founder & CEO</h4>
-                        <p class="text-slate-500 mb-2">Domain expert in emerging market fintech & social coordination systems.</p>
-                        <div class="flex space-x-4 text-sm font-bold text-emerald-600">
-                            <span>Ex-Fintech Lead</span>
-                            <span>Community Specialist</span>
+                <div>
+                    <div class="bg-white p-10 rounded-[2.5rem] text-slate-900">
+                        <h3 class="text-2xl font-bold mb-8 italic tracking-tighter text-emerald-900">Business Model</h3>
+                        <div class="space-y-8">
+                            <div>
+                                <div class="text-emerald-600 font-black text-xl mb-1 italic">SaaS Fees</div>
+                                <p class="text-slate-500 text-sm">Transactional usage fees per successful group cycle.</p>
+                            </div>
+                            <div>
+                                <div class="text-emerald-600 font-black text-xl mb-1 italic">Premium Coordination</div>
+                                <p class="text-slate-500 text-sm">Advanced tools for cooperatives and large trade associations.</p>
+                            </div>
+                            <div>
+                                <div class="text-emerald-600 font-black text-xl mb-1 italic">Trust Data API</div>
+                                <p class="text-slate-500 text-sm">Monetizing vetted contribution history for credit-scoring partners.</p>
+                            </div>
+                        </div>
+                        <hr class="my-8 border-slate-100">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-slate-900">50,000</div>
+                            <div class="text-xs font-bold text-slate-400 uppercase tracking-widest">Year 1 Target Users</div>
                         </div>
                     </div>
                 </div>
@@ -241,25 +183,64 @@
         </div>
     </section>
 
-    <!-- Final CTA -->
-    <section id="vision" class="bg-emerald-600 py-24 px-6 md:px-12 text-center rounded-[3rem] mx-6 md:mx-12 mb-20 shadow-2xl shadow-emerald-900/40 text-white relative overflow-hidden">
-        <div class="max-w-3xl mx-auto relative z-10">
-            <h2 class="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight">Join the Pre-Seed Round</h2>
-            <p class="text-emerald-50 text-xl mb-10 opacity-90">Building the coordination layer for the world's most resilient financial systems. Let's talk about our roadmap and early data.</p>
-            <a href="mailto:contact@ajodigital.ng" class="bg-white text-emerald-900 px-12 py-5 rounded-full font-bold text-xl hover:shadow-xl transition-all transform hover:-translate-y-1 inline-block">Request Pitch Deck</a>
+    <!-- Investor Form Section -->
+    <section id="contact" class="py-24 px-6 md:px-12 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold mb-4">Investor & Pilot Inquiries</h2>
+                <p class="text-slate-500">We are currently raising our pre-seed round. Fill out the form below to request our pitch deck or to join our pilot phase.</p>
+            </div>
+            
+            <form class="space-y-6 bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100" onsubmit="alert('Thank you for your inquiry. Ajo Digital will contact you shortly.'); return false;">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 ml-1">Full Name</label>
+                        <input type="text" placeholder="Jane Doe" required>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 ml-1">Email Address</label>
+                        <input type="email" placeholder="jane@venturefund.com" required>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 ml-1">Organization / Title</label>
+                    <input type="text" placeholder="Managing Partner at XYZ Capital" required>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 ml-1">Inquiry Type</label>
+                    <select class="w-full bg-white border border-slate-200 rounded-xl p-3 outline-none focus:border-emerald-600">
+                        <option>Investor (Pre-Seed Round)</option>
+                        <option>Strategic Partnership</option>
+                        <option>Pilot Group Registration</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 ml-1">Message</label>
+                    <textarea rows="4" placeholder="How can we help you?" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-emerald-600 text-white font-bold py-4 rounded-xl shadow-lg shadow-emerald-600/20 hover:bg-emerald-700 transition duration-300">
+                    Submit Inquiry
+                </button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-16 px-6 border-t text-center bg-white">
+    <footer class="py-16 px-6 border-t text-center bg-slate-50">
         <div class="mb-8">
-            <span class="text-xl font-bold tracking-tighter text-slate-400">AJO DIGITAL</span>
+            <span class="text-xl font-bold tracking-tighter text-slate-400 italic">AJO DIGITAL</span>
         </div>
-        <p class="text-slate-400 text-[10px] md:text-xs max-w-2xl mx-auto leading-relaxed uppercase tracking-widest font-bold">
-            Notice: Ajo Digital is a sociotech platform and does not operate as a bank, wallet, or financial institution. We do not hold, custody, or manage customer funds.
+        <div class="flex flex-wrap justify-center gap-6 mb-10 text-sm font-bold text-slate-500 uppercase tracking-widest">
+            <a href="#opportunity" class="hover:text-emerald-600">Opportunity</a>
+            <a href="#solution" class="hover:text-emerald-600">Solution</a>
+            <a href="#contact" class="hover:text-emerald-600">Contact</a>
+        </div>
+        <p class="text-slate-400 text-[10px] max-w-2xl mx-auto leading-relaxed uppercase tracking-[0.2em] font-black italic">
+            Disclaimer: Ajo Digital is a sociotech platform and does not operate as a bank, wallet, or financial institution. We do not hold, custody, or manage customer funds.
         </p>
-        <div class="mt-8 text-slate-400 text-sm">
-            &copy; 2025 Ajo Digital. Lagos, Nigeria.
+        <div class="mt-8 text-slate-400 text-xs font-medium">
+            &copy; 2025 Ajo Digital. All rights reserved.
         </div>
     </footer>
 
